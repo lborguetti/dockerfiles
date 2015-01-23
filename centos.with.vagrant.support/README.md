@@ -5,17 +5,20 @@ CentOS image with Vagrant support.
 
 Packages installed required for Vagrant
 
+        
         sudo
         openssh-server
         openssh-clients
 
 Package installed required for Ansible
 
+        
         python-simplejson
 
 
 ## Building Image
 
+        
         git clone https://github.com/lborguetti/docker.lab.git
         cd centos.with.vagrant.support
         docker build -t centos-vagrant .
@@ -37,5 +40,6 @@ Create Vagrantfile
 
 Up
 
-        vagrant up
+        
+        vagrant up --provider=docker
         vagrant ssh
