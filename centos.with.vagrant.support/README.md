@@ -27,14 +27,15 @@ Package installed required for Ansible
 
 Create Vagrantfile
 
+        
         VAGRANTFILE_API_VERSION = "2"
         
-        Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-          config.vm.provider "docker" do |docker|
-            docker.image = "centos-vagrant"
-            docker.has_ssh = true
-            docker.ports = ["8080:8080"]
-          end
+            Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+              config.vm.provider "docker" do |docker|
+                docker.image = "centos-vagrant"
+                docker.has_ssh = true
+                docker.ports = ["8080:8080"]
+              end
         
         end
 
