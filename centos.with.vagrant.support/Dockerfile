@@ -22,4 +22,4 @@ RUN useradd --create-home -s /bin/bash vagrant && \
 # Configuring vagrant in sudoers
 RUN echo "vagrant ALL= NOPASSWD: ALL" > /etc/sudoers
 
-CMD ["/usr/sbin/sshd" "-D"]
+CMD ["/usr/sbin/sshd", "-D"]
