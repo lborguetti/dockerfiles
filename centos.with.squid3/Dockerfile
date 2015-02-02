@@ -3,7 +3,7 @@ MAINTAINER Luciano A. Borguetti Faustino <lucianoborguetti@gmail.com>
 
 # Installing packages
 RUN yum -y update && \
-    yum -y install && \
+    yum -y install squid && \
     yum clean all
 
 # Copy start script
