@@ -13,7 +13,7 @@ Packages installed
 
     ```
     git clone https://github.com/lborguetti/docker.lab.git
-    cd centos.with.squid3
+    cd docker.lab/centos.with.squid3
     docker build -t squid3 .
     ```
 
