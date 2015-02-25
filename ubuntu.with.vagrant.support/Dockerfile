@@ -4,7 +4,7 @@ MAINTAINER Luciano A. Borguetti Faustino <lucianoborguetti@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Installing packages
-RUN apt-get update && apt-get install -y ssh sudo python-simplejson && apt-get clean
+RUN apt-get update && apt-get install -y ssh sudo python-simplejson aptitude && apt-get clean
 
 # Configuring sshd deamon
 RUN mkdir /var/run/sshd
