@@ -9,8 +9,8 @@ Packages installed
 
 ## Building Image
 
-        git clone https://github.com/lborguetti/docker.lab.git
-        cd docker.lab/centos.with.squid3
+        git clone https://github.com/lborguetti/dockerfiles.git
+        cd dockerfiles/centos.with.squid3
         docker build -t squid3 .
 
 ## Image Options Description
