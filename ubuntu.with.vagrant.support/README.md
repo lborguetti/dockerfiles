@@ -15,8 +15,8 @@ Package installed required for Ansible
 
 ## Building Image
 
-        git clone https://github.com/lborguetti/docker.lab.git
-        cd docker.lab/ubuntu.with.vagrant.support
+        git clone https://github.com/lborguetti/dockerfiles.git
+        cd dockerfiles/ubuntu.with.vagrant.support
         docker build -t ubuntu-vagrant .
 
 ## Using with Vagrant
