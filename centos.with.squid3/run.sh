@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo "=> Starting squid"
+echo "=> Create missing swap directories"
+/usr/sbin/squid -z
 
+echo "=> Starting squid"
 /usr/sbin/squid -N ${SQUID_OPTS}
