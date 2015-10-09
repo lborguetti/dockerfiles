@@ -35,6 +35,10 @@ RUN apt-get -qqy update \
 # Set envs for locale
 ENV LANG en_US.UTF-8
 
+# Copy start script
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
 # Set volume, workdir, user
 VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
 
@@ -43,10 +47,6 @@ WORKDIR /usr/share/grafana
 USER grafana
 
 EXPOSE 3000
-
-# Copy start script
-COPY docker-entrypoint.sh /docker-entrypoint.sh
-RUN chmod +x /docker-entrypoint.sh
 
 # Set entrypoint
 ENTRYPOINT ["/docker-entrypoint.sh"]
