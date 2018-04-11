@@ -1,10 +1,13 @@
-.PHONY: build run
+.PHONY: setup build run
 
 DOCKER_IMAGE = eclipse
 WORK_DIR     = /home/data/workspace
 CURRENT_PATH = $(shell pwd)
 
-all: build run
+all: setup build run
+
+setup:
+	xhost +
 
 build:
 	docker build -t $(DOCKER_IMAGE) .
